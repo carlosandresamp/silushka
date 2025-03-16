@@ -1,0 +1,104 @@
+@theme {
+  --font-sans:
+    "Inter Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-serif: "Lora Variable", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono:
+    "Fira Code Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+
+  --color-light: var(--color-neutral-100);
+  --color-dark: var(--color-neutral-900);
+
+  --color-bg-body: var(--color-bg-body);
+  --color-bg-inverse: var(--color-bg-inverse);
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-tertiary: var(--color-bg-tertiary);
+  --color-bg-accent: var(--color-bg-accent);
+  --color-bg-positive: var(--color-bg-positive);
+  --color-bg-destructive: var(--color-bg-destructive);
+
+  --color-fg-body: var(--color-fg-body);
+  --color-fg-inverse: var(--color-fg-inverse);
+  --color-fg-primary: var(--color-fg-primary);
+  --color-fg-secondary: var(--color-fg-secondary);
+  --color-fg-tertiary: var(--color-fg-tertiary);
+  --color-fg-accent: var(--color-fg-accent);
+  --color-fg-positive: var(--color-fg-positive);
+  --color-fg-destructive: var(--color-fg-destructive);
+
+  --z-index-dialog: 40;
+  --z-index-select: 50;
+  --z-index-dropdown: 50;
+
+  --ease-wave: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: linear(
+    0,
+    0.006,
+    0.025 2.8%,
+    0.101 6.1%,
+    0.539 18.9%,
+    0.721 25.3%,
+    0.849 31.5%,
+    0.937 38.1%,
+    0.968 41.8%,
+    0.991 45.7%,
+    1.006 50.1%,
+    1.015 55%,
+    1.017 63.9%,
+    1.001
+  );
+
+  --animate-shimmer: shimmer 1500ms infinite var(--ease-in-out);
+  --animate-fade-in: fade-in 300ms var(--ease-spring);
+  --animate-fade-out: fade-out 300ms var(--ease-spring);
+  --animate-fade-in-scale: fade-in-scale 300ms var(--ease-spring);
+  --animate-fade-out-scale: fade-out-scale 300ms var(--ease-spring);
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(200%);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade-out-scale {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+}
